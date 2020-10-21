@@ -49,12 +49,12 @@ body{
 }
 .pencarian-cepat{
   position: absolute;
-  width: 954px;
+  width: 70%;
   height: 137px;
   margin-top: -6em;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  left: 206px;
+  left: 15%;
   padding: 1em;
   margin-bottom: 6em;
 }
@@ -93,4 +93,64 @@ hr.underline{
 .nav-link:hover{
   color: #fd3d3d!important;
   font-size: 20px!important;
+}
+.grid-product{
+  width: 70%;
+  left: 15%;
+  margin-bottom: 4em;
+}
+.card-product{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+  padding-bottom: .1em;
+}
+.card-product:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.img-product{
+  border-radius: 5px 5px 12px 12px;
+}
+.card-product .namaproduk{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #303030;
+}
+.card-product .hargaproduk{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  /* or 162% */
+  color:#fd3d3d;
+  margin-top: -1em;
+}
+.card-product .tahunkeluar{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #939393;
+  margin-top: -1em;
+}
+.card-product .dealer{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #4D4D4D;
+}
+.title-produk{
+  margin-bottom: 1.5em;
+}
+.title-head{
+  font-weight: 600!important;
+}
+.title-tail{
+  font-weight: 900!important;
+  color: #FD3D3D;
 }
