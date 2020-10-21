@@ -1,0 +1,96 @@
+body{
+	font-family: raleway;
+}
+.logonav {
+  width: 128px;
+  height: 37px;
+}
+.navbar{
+	padding-left: 76px;
+	padding-right: 76px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.searchform{
+  width: 366px!important;
+  height: 44px;
+  border-radius: 3px;
+  background-color: #ededed;
+  margin-right: -4em;
+}
+.btnsearch{
+  width: 53px;
+  height: 31px;
+  border-radius: 4px;
+  background-color: #fd3d3d;
+  font-size: 12px;
+  font-weight: bold;
+}
+.btn-outline-red{
+  border-radius: 4px;
+  border: solid 1px #fd3d3d;
+  background-color: #ffffff;
+}
+.btn-red{
+  border-radius: 4px;
+  background-color: #fd3d3d;
+
+}
+.nav-item{
+  font-family: Raleway !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  color: #303030 !important;
+}
+.pencarian-cepat{
+  position: absolute;
+  width: 954px;
+  height: 137px;
+  margin-top: -6em;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 206px;
+  padding: 1em;
+  margin-bottom: 6em;
+}
+.judulpencariancepat{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #4D4D4D;
+}
+.caricepatkategori{
+
+}
+.caricepatwilayah{
+
+}
+.caricepatharga{
+
+}
+.tabfilter-produk-home{
+  margin-top: 7em !important;
+}
+
+hr.underline{
+  border-top: 1px solid;
+  z-index: 999999!important;
+  width: 50%;
+}
+.nav-link{
+  color: #303030 !important;
+}
+.nav-link:hover{
+  color: #fd3d3d!important;
+  font-size: 20px!important;
+}
