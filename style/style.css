@@ -10,6 +10,9 @@ body{
 	padding-right: 76px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(41,41,41,0.31);
+-moz-box-shadow: 0px 0px 10px 0px rgba(41,41,41,0.31);
+box-shadow: 0px 0px 10px 0px rgba(41,41,41,0.31);
 }
 .searchform{
   width: 366px!important;
@@ -90,7 +93,7 @@ hr.underline{
 .nav-link{
   color: #303030 !important;
 }
-.nav-link:hover{
+.nav-links:hover{
   color: #fd3d3d!important;
   font-size: 20px!important;
 }
@@ -98,6 +101,7 @@ hr.underline{
   width: 70%;
   left: 15%;
   margin-bottom: 4em;
+  z-index: 999999!important;
 }
 .card-product{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -105,6 +109,7 @@ hr.underline{
   width: 100%;
   border-radius: 5px;
   padding-bottom: .1em;
+  background-color: #FFFFFF;
 }
 .card-product:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -153,4 +158,167 @@ hr.underline{
 .title-tail{
   font-weight: 900!important;
   color: #FD3D3D;
+}
+.title-tail2{
+  font-weight: 900!important;
+  color: #FD3D3D;
+  font-size: 72px;
+}
+.kenapa-motormu{
+  margin-top: 5em;
+}
+.content{
+  background-image: url('../img/bg.svg');
+  background-size: cover;
+  padding-left: 76px;
+  padding-right: 76px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.keuntungan{
+  width: 318px;
+  height: 68px;
+  background: linear-gradient(90deg, #FD3D3D 10.85%, #FF9999 101.57%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+  border-radius: 9px;
+  vertical-align: middle;
+}
+.item-keuntungan{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  color: #FFFFFF;
+  padding-top: 16px;
+}
+.iconkeuntungan{
+  height: 45px;
+  width: 45px;
+  vertical-align: middle;
+}
+.langkah-pembelian{
+  margin-top: 10em;
+}
+.title-langkah{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #4D4D4D;
+}
+.deskripsi-langkah{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #000000;
+}
+.gbrlangkah{
+  height: 160px;
+  width: 232px;
+  margin-bottom: 3em;
+}
+.upperfooter{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  color: #ffffff;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.9)
+    ),
+    /* bottom, image */
+    url('../img/bgfooter.svg');
+}
+.lowerfooter{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #fd3d3d;
+  text-align: center;
+  color: #ffffff;
+}
+.logobawah{
+  margin-top: -5em;
+}
+.about-us{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /* or 125% */
+  color: #FFFFFF;
+}
+.bannermotor{
+  margin-top: 7em;
+  margin-bottom: 3em;
+}
+.filtersidebar{
+  margin-bottom: 7em;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
+}
+.filtersidebarheader{
+  background-color: #303030;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-align: center;
+  height: 47px;
+}
+.filtertitle{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #4D4D4D;
+}
+.btn-filter{
+  width: 100%;
+}
+.hrproduk{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-top: 1px solid #fd3d3d;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #fd3d3d;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+    border: 1px solid #BEBEBE;
+    box-sizing: border-box;
+    padding: 1em;
+    font-size: 12px;
+}
+.custom-control-label:before{
+  background-color:#EDEDED;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:#fd3d3d;
 }
