@@ -501,6 +501,12 @@ hr.underline{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.truncate-name {
+  width: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .detaildealer{
   margin-top: 7em;
   width: 100%;
@@ -510,4 +516,164 @@ hr.underline{
   padding:1em;
   border-radius: 5px;
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+}
+.pill-nav a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 23px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid #FD3D3D;
+  box-sizing: border-box;
+  border-radius: 23px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FD3D3D;
+}
+
+.pill-nav a:hover {
+  background: rgba(253, 61, 61, 0.2);
+  color: #FD3D3D;
+}
+
+.pill-nav a.active {
+  background: rgba(253, 61, 61, 0.72);
+  /*border: 1px solid #FD3D3D;*/
+  box-sizing: border-box;
+  border-radius: 23px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+.pill-nav a.active:hover{
+  color: white;
+}
+.listproduksaya{
+  padding: 2em;
+  margin-bottom: 1em;
+  margin-top:1em;
+}
+.cardproduksaya{
+  background: #FFFFFF;
+  /*box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);*/
+  height: auto;
+  text-align: left !important;
+  color: black;
+}
+.cardproduksaya:hover{
+  color: black;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);
+}
+.namaprodukcard{
+  color:dark-grey;
+  font-size:14pt;
+  line-height: 14pt;
+  font-weight:600;
+}
+.hargaprodukcard{
+ font-family: Raleway;
+ font-size:17pt;
+ line-height: 17pt;
+ font-weight:800;
+/* or 109% */
+ color: #FD3D3D;
+}
+.dropdown-menu{
+  padding-left: 1em;
+}
+.dropdown-menu a{
+  color: black;
+  font-style: normal;
+  font-size: 13px;
+}
+.dropdown-menu a:hover{
+  color: #FD3D3D;
+}
+.cardformmotor{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: auto;
+  padding: 2em;
+}
+.box {
+  position: relative;
+  background: #ffffff;
+  width: 100%;
+}
+.box-header {
+  color: #444;
+  display: block;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: 10px;
+}
+.box-tools {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.dropzone-wrapper {
+  border: 2px dashed #91b0b3;
+  color: #92b0b3;
+  position: relative;
+  width: 104px;
+  height: 106px;
+}
+.dropzone-desc {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 90%;
+  top: 25%;
+  font-size: 12px;
+}
+.dropzone,
+.dropzone:focus {
+  position: absolute;
+  outline: none !important;
+  width: 104px;
+  height: 104px;
+  cursor: pointer;
+  opacity: 0;
+}
+.dropzone-wrapper:hover,
+.dropzone-wrapper.dragover {
+  background: #ecf0f5;
+}
+.preview-zone {
+  text-align: center;
+}
+.preview-zone .box {
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+label{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  /* identical to box height */
+
+
+  color: #303030;
+}
+.dropdown-header-name{
+  padding-left: 1em !important;
+  margin: .1em !important;
+  text-align: 0 !important;
+  text-align: left;
 }

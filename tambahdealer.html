@@ -56,126 +56,85 @@
             </a>
           </li>
           <li class="nav-item"> 
-             <a href="" class="btn btn-outline-red text-danger my-2 my-sm-0 mr-sm-2">Masuk/Daftar</a>
+            <div class="dropdown">
+              <a class="btn bg-transparent text-secondary" id="servicesDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Alex<span> <i class="fas fa-angle-down"></i></span></a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+                <!-- the standard dropdown items --> 
+
+                <!-- finally, using flex to create your layout -->
+                <div class="row w-100">
+                  <div class="d-flex align-items-start justify-content-start">
+                  
+                  <div class="col-md-4">   
+                    <div class="row">
+                      <div class="col-sm-12 nopaddingPanel">   
+                        <div class="dropdown-header dropdown-header-name">Alexander Graham Bell</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <img src="./img/fotoprofil.png" class="w-100" style="border-radius:5%">
+                        <a href="" class="btn btn-outline-red text-danger mt-2 d-flex justify-content-center">Lihat Profil</a>
+                      </div> 
+                    </div>
+                   </div>
+                                               
+                  <div class="col-md-4">
+                   <div class="dropdown-header">Data Saya</div>
+                   <a class="dropdown-item" href="produksaya.html">Produk Saya</a>
+                   <a class="dropdown-item" href="dealersaya.html">Dealer Saya</a>
+                  </div>                
+                  <div class="col-md-4">
+                   <div class="dropdown-header">Transaksi</div>
+                   <a class="dropdown-item" href="#">Pembelian</a>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
-             <a href="formmotor.html" class="btn btn-red my-2 my-sm-0 mr-sm-2 text-white w-100">Jual</a>
+             <a href="formmotor.html" class="btn btn-red my-2 my-sm-0 mr-sm-2 text-white">Jual</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container content-wrapper">
-      <div class="row detailmotor">
-        <div class="col-lg-6 col-sm-12">
-          <img id="featured" src="./img/motordummy2.png">
-          <div id="slide-wrapper" >
-            <img id="slideLeft" class="arrow" src="./img/arrow-left.png">
-            <div id="slider">
-              <img class="thumbnail active" src="./img/kawasaki.png">
-              <img class="thumbnail" src="./img/motordummy2.png">
-              <img class="thumbnail" src="./img/motordummy2.png">
-              <img class="thumbnail" src="./img/motordummy2.png">
-              <img class="thumbnail" src="./img/motordummy2.png">
-              <img class="thumbnail" src="./img/motordummy2.png">
-              <img class="thumbnail" src="./img/motordummy2.png">
-            </div>
-            <img id="slideRight" class="arrow" src="./img/arrow-right.png">
+    <div class="container">
+      <div class="cardformmotor" style="margin-top:8em;margin-bottom:5em">
+        <a class="btn text-dark" style="font-weight:600" href=""><i class="fas fa-arrow-left"></i><span> Tambah Dealer</span></a>
+        <form> 
+          <div class="form-group">
+            <label for="namadealer">Nama Dealer</label>
+            <input type="text" class="form-control" id="namadealer" placeholder="Masukkan nama dealer">
           </div>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <div class="card-detail">
-            <h2 class="detail-title">
-            Yamaha R15 2016
-            </h2>
-            <h2 class="detail-price">
-              Rp.32.000.000
-            </h2>
-            <div class="row">
-              <div class="col-lg-3">
-                <p  style="color:grey;font-size:10pt"><i class="fas fa-eye"></i><span>  7 kali dilihat</span></p>
-              </div>              
-              <div class="col">
-                <p  style="color:grey;font-size:10pt"><i class="fas fa-database"></i><span>  Tersedia</span></p>
+          <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input type="text" class="form-control" id="alamat" placeholder="Masukkan alamat dealer">
+          </div>
+          <div class="form-group">
+            <label for="telepon">Nomor telepon</label>
+            <input type="number" class="form-control" id="ktp" placeholder="Masukkan nomor telepon dealer">
+          </div>
+          <div class="form-group">
+            <label for="hp">Nomor HP</label>
+            <input type="number" class="form-control" id="ktp" placeholder="Masukkan nomor hp dealer">
+          </div>
+          <div class="form-group">
+            <label class="control-label">Foto Dealer</label>
+            <div class="dropzone-wrapper">
+              <div class="dropzone-desc">
+                <i class="glyphicon glyphicon-download-alt"></i>
+                <p>Pilih atau seret gambar disini.</p>
               </div>
-            </div>
-            <hr>
-            <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-store"></i><span class="ml-2">  Maju Jaya Motor Blimbing</span></p>
-            <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-map-marked-alt"></i><span class="ml-2">  Jalan Jaksa Agung Suprapto, Malang, Jawa Timur, Indonesia</span></p>
-            <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-phone-alt"></i></i><span class="ml-2">  081222222222</span></p>
-            <div class="row">
-              <div class="col-lg-3">
-                <a class="btn btn-outline-danger w-100"href=""><i class="fas fa-share-alt"></i></a>
-              </div>
-              <div class="col-lg-3">
-                <a class="btn btn-dark w-100"href=""><i class="fas fa-comment-dots"></i></a>
-              </div>
-              <div class="col-lg-6">
-                <a class="btn btn-danger w-100"href="">Ajukan Pembayaran</a>
-              </div>
+              <input type="file" name="img_logo" class="dropzone">
             </div>
           </div>
-          <div class="space-iklan">
-            <img src="./img/iklan.png" class="w-100">
-          </div>
-        </div>
-      </div>
-      <div class="row desc w-100">
-        <div class="col-lg-6 col-sm-12">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="desc-title">Spesifikasi</h2>
-              <div class="card-detail">
-                <table class="table nopaddingPanel borderless">
-                  <tbody>
-                    <tr>
-                      <td>Merk</td>
-                      <td class="text-left">: <span><b>Yamaha</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>Seri</td>
-                      <td style="text-align: left">: <span><b>All new R15</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>Tahun</td>
-                      <td style="text-align: left">: <span><b>2016</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>Kategori</td>
-                      <td style="text-align: left">: <span><b>-</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>KM</td>
-                      <td style="text-align: left">: <span><b>5000 Km</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>Surat Keterangan</td>
-                      <td style="text-align: left">: <span><b>Tersedia</b></span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div class="form-row">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-red text-white float-right" style="font-size:14px">Simpan Produk</button>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <h2 class="desc-title">Detail</h2>
-              <div class="card-detail">
-                <p> For sale Yamaha R15 2016.
-                    Full original, bukan restorasi.
-                    Low odo 5.000 km.
-                    Kondisi istimewa, no crash, no rebah.
-                    Collector item. Warna corak hitam
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <h2 class="desc-title">Lokasi Dealer</h2>
-          <div class="card-detail">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.889779524141!2d112.62466132917763!3d-7.941027171397667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629d2bb119985%3A0xd42db5022c24b9ab!2sDatamax%20Teknologi%20Internasional!5e0!3m2!1sid!2sid!4v1603797610588!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
     <footer id="sticky-footer">

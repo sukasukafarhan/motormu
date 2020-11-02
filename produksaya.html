@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- <link rel="stylesheet" href="./style/select2-bootstrap4-theme/dist/select2-bootstrap4.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />  
+    <link rel="stylesheet" href="./asset/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./asset/OwlCarousel2/dist/assets/owl.theme.default.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <title>Motormu</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <a class="navbar-brand logonav" href="#">
+          <img src="./img/logosamping.png" class="logonav">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item ml-2">
+            <a class="nav-link" href="produk.html">Motor </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sparepart.html">Sparepart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dealer.html">Dealer</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+          <input class="form-control searchform" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn my-2 my-sm-0 btnsearch text-white" type="submit">Cari</button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-heart fa-sm"></i> 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-bell fa-sm"></i>
+            </a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link disabled" href="#">
+              <i class="fas fa-comment-dots"></i>
+            </a>
+          </li>
+          <li class="nav-item"> 
+            <div class="dropdown">
+              <a class="btn bg-transparent text-secondary" id="servicesDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Alex<span> <i class="fas fa-angle-down"></i></span></a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+                <!-- the standard dropdown items --> 
+
+                <!-- finally, using flex to create your layout -->
+                <div class="row w-100">
+                  <div class="d-flex align-items-start justify-content-start">
+                  
+                  <div class="col-md-4">   
+                    <div class="row">
+                      <div class="col-sm-12 nopaddingPanel">   
+                        <div class="dropdown-header dropdown-header-name">Alexander Graham Bell</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <img src="./img/fotoprofil.png" class="w-100" style="border-radius:5%">
+                        <a href="" class="btn btn-outline-red text-danger mt-2 d-flex justify-content-center">Lihat Profil</a>
+                      </div> 
+                    </div>
+                   </div>
+                                               
+                  <div class="col-md-4">
+                   <div class="dropdown-header">Data Saya</div>
+                   <a class="dropdown-item" href="produksaya.html">Produk Saya</a>
+                   <a class="dropdown-item" href="dealersaya.html">Dealer Saya</a>
+                  </div>                
+                  <div class="col-md-4">
+                   <div class="dropdown-header">Transaksi</div>
+                   <a class="dropdown-item" href="#">Pembelian</a>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+             <a href="formmotor.html" class="btn btn-red my-2 my-sm-0 mr-sm-2 text-white">Jual</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="areaproduk" style="margin-top:8em;margin-bottom:5em">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="pill-nav float-left">
+              <a class="active">Semua</a>
+              <a href="#news">Produk Pribadi</a>
+              <a href="#contact">Produk Dealer Saya</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <form class="form-inline my-2 my-lg-0 mx-auto">
+              <input class="form-control searchform2 w-100" type="search" placeholder="Cari Motormu" aria-label="Search">
+              <button class="btn my-2 my-sm-0 btnsearch text-white" type="submit">Cari</button>
+            </form>
+          </div>
+        </div>
+        <div class="row listproduksaya">
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown show">
+                    <button class="btn bg-transparent float-right" ><span><i class="fas fa-ellipsis-v"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Dealer Saya</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row listproduksaya">
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row listproduksaya">
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row listproduksaya">
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row listproduksaya">
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cardproduksaya w-100 btn">
+              <div class="row">
+                <div class="col-sm-4 mx-auto my-auto">
+                  <img src="./img/kawasaki.png" class="fotodealer">
+                </div>
+                <div class="col-sm-6">
+                  <p  class="truncate namaprodukcard">Kawasaki Ninja 2 tak 2010</p>
+                  <p  class="truncate hargaprodukcard">Rp. 20.000.000</p>
+                  <p  style="color:dark-grey;font-size:10pt" class="truncate">Produk Pribadi</p>
+                </div>
+                <div class="col-sm-2 my-auto float-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent float-right" type="button" data-toggle="dropdown"><span><i class="fas fa-ellipsis-v"></i></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" class="btn"><i class="fas fa-eye"></i> <span> Lihat</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-pen"></i> <span> Ubah</span></a></li>
+                      <li><a href="#" class="btn"><i class="fas fa-trash"></i> <span> Hapus</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="hrproduk"> 
+        <div class="pagination justify-content-center mb-5">
+          <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a href="#" class="active">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+    </div>
+    <footer id="sticky-footer">
+      <div class="upperfooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <img src="./img/logobawah.png" class="logobawah mb-3">
+              <h4 class="mb-2"><b>About Us</b></h4>
+              <p class="about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img src="./img/gplay.png"><span>  <img class="ml-2" src="./img/appstore.png"></span>
+            </div>
+            <div class="col-sm">
+              <p class="about-us d-flex justify-content-right"><span><i class="fas fa-map-marked-alt fa-2x mr-4"></i></span> Jl. Candi Sawentar<br> No. E 714 Mojolangu, Kec. Lowokwaru<br>Kota Malang, Jawa Timur 65141</p>
+              <p class="about-us d-flex justify-content-right"><span><i class="fas fa-phone fa-2x mr-4"></i></span>+62 341 4377066</p>
+              <p class="about-us d-flex justify-content-right"><span><i class="fas fa-envelope fa-2x mr-4"></i></span>+62 341 4377066</p>
+              <h4 class="mb-2 mt-4"><b>Follow Us</b></h4>
+              <div class="row mt-2">
+                <img src="./img/ig.svg" class="mr-2">
+                <img src="./img/fb.svg" class="mr-2">
+                <img src="./img/twitter.svg" class="mr-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lowerfooter float-bottom">
+        <p>© 2020 Motormu.com. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/1918189cc3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script src="./asset/OwlCarousel2/dist/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  </body>
+</html>
