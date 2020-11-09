@@ -427,6 +427,7 @@ hr.underline{
   border-radius: 4px;
   padding: 1em;
   margin-bottom: 2em;
+  width: 100%;
 }
 .space-iklan{
   width: 100%;
@@ -734,4 +735,18 @@ label{
   border: 0.4px solid dark-grey;
   box-sizing: border-box;
   border-radius: 3px;
+}
+.cicilan{
+  display: none;
+}
+.cicilan td , p{  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #656565;
+}
+iframe{
+  width: 100%;
 }

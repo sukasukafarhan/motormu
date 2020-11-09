@@ -51,3 +51,15 @@ var mapProp= {
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+
+function showCicilan() {
+  var x = document.getElementById("cicilan");
+  var y = document.getElementById("formsimulasi");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+    y.style.display = "none"
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+  }
+}
