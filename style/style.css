@@ -677,3 +677,61 @@ label{
   text-align: 0 !important;
   text-align: left;
 }
+.btn-tipeproduk{
+  width: 100px;
+  height: 115px;
+  padding: 1em;
+}
+.img-tipeproduk{
+  width: 61px;
+  margin-bottom: 0.6em;
+}
+.btn-tipeproduk:hover{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+}
+.btn-tipeproduk:active{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+}
+.img-profil{
+  width: 90%;
+  height: auto;
+  border-radius: 22px;
+}
+.namaprofil{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #303030;
+}
+.detailprofil{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #303030;
+}
+.label-detail{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #303030;
+  font-weight: 500;
+}
+.fotoprodukmodal{
+  width: 100%;
+  height: auto;
+}
+.formsimulasi{
+  border: 0.4px solid dark-grey;
+  box-sizing: border-box;
+  border-radius: 3px;
+}

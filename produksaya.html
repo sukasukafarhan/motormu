@@ -95,21 +95,43 @@
             </div>
           </li>
           <li class="nav-item">
-             <a href="formmotor.html" class="btn btn-red my-2 my-sm-0 mr-sm-2 text-white">Jual</a>
+             <button data-toggle="modal" data-target="#pilihanProduk" class="btn btn-red my-2 my-sm-0 mr-sm-2 text-white">Jual</button>
           </li>
         </ul>
       </div>
     </nav>
     <div class="container">
+      <div class="modal fade" id="pilihanProduk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Produk apa yang ingin anda jual?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-auto mt-2 mb-4">
+              <a href="formmotor.html" class="btn btn-white btn-outline-dark btn-tipeproduk mr-4">
+                <img src="./img/motor.png" class="img-tipeproduk">
+                <p class="text-dark">Motor</p>
+              </a>
+              <a href="formsparepart.html" class="btn btn-white btn-outline-dark btn-tipeproduk">
+                <img src="./img/damper.png" class="img-tipeproduk">
+                <p class="text-dark">Sparepart</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="areaproduk" style="margin-top:8em;margin-bottom:5em">
         <div class="row">
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <div class="pill-nav float-left">
               <a class="active">Semua</a>
               <a href="#news">Produk Pribadi</a>
               <a href="#contact">Produk Dealer Saya</a>
             </div>
-          </div>
+          </div> -->
           <div class="col-sm-6">
             <form class="form-inline my-2 my-lg-0 mx-auto">
               <input class="form-control searchform2 w-100" type="search" placeholder="Cari Motormu" aria-label="Search">

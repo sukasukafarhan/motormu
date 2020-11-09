@@ -102,27 +102,90 @@
     </nav>
     <div class="container">
       <div class="cardformmotor" style="margin-top:8em;margin-bottom:5em">
-        <a class="btn text-dark" style="font-weight:600" href="profil.html"><i class="fas fa-arrow-left"></i><span> Edit Profil</span></a>
+        <a class="btn text-dark" style="font-weight:600" href=""><i class="fas fa-arrow-left"></i><span> Edit Motormu</span></a>
         <form> 
-          <div class="form-group">
-            <label for="namalengkap">Nama Lengkap</label>
-            <input type="text" class="form-control" id="namalengkap" placeholder="Masukkan nama lengkapmu">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="namaproduk">Nama Produk</label>
+              <input type="text" class="form-control" id="namaproduk" placeholder="Masukkan nama produk">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="harga">Harga</label>
+              <input type="number" class="form-control" id="harga" placeholder="Masukkan harga produk">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="alamat">Alamat</label>
-            <input type="text" class="form-control" id="alamat" placeholder="Masukkan alamatmu">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputmerk">Nama Merk</label>
+              <select id="inputmerk" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="selectjenis">Jenis Produk</label>
+              <select id="selectjenis" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="ktp">Nomor KTP</label>
-            <input type="text" class="form-control" id="ktp" placeholder="Masukkan nomor ktp-mu">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="jarak">Jarak Tempuh</label>
+              <input type="number" class="form-control" id="jarak" placeholder="Masukkan jarak tempuh / km produk">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="tahunpembuatan">Tahun Pembuatan</label>
+              <input type="text" class="form-control" id="tahunpembuatan" placeholder="Masukkan harga produk">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="sim">Nomor Surat Izin Mengemudi</label>
-            <input type="text" class="form-control" id="sim" placeholder="Masukkan nomor surat izin mengemudimu">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="lokasipameran">Lokasi Ruang Pameran</label>
+              <select id="lokasipameran" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="kecamatan">Kecamatan</label>
+              <select id="kecamatan" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="telepon">Nomor telepon</label>
-            <input type="number" class="form-control" id="ktp" placeholder="Masukkan nomor teleponmu">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="status">Status</label>
+              <select id="status" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="deskripsisingkat">Deskripsi Singkat</label>
+              <input type="text" class="form-control" id="deskripsisingkat" placeholder="Masukkan deskripsi singkat produk">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="deskripsilengkap">Deskripsi Produk</label>
+              <textarea type="text" class="form-control" id="deskripsilengkap" placeholder="Masukkan deskripsi produk secara rinci"></textarea>
+            </div>
+            <div class="form-group col-md-6">
+              <div class="form-group">
+               <label class="control-label">Daftar Gambar Produk</label>
+               <div class="dropzone-wrapper">
+                <div class="dropzone-desc">
+                 <i class="glyphicon glyphicon-download-alt"></i>
+                 <p>Pilih atau seret gambar disini.</p>
+                </div>
+                <input type="file" name="img_logo" class="dropzone">
+               </div>
+              </div>
+            </div>
           </div>
           <div class="form-row">
             <div class="col-sm-12">
