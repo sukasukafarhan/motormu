@@ -747,6 +747,9 @@ iframe{
 .nav-mobile{
   display: none;
 }
+.filterandsort{
+  display: none!important;
+}
 @media (max-width: 575.98px) {
   .navbar{
     padding-left: 1em;
@@ -1055,5 +1058,34 @@ iframe{
     background: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
     display: none;
+  }
+  .filterandsort{
+    display: block!important;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
+    padding: 0.4em;
+    width: 80%;
+    border-radius: 10px;
+    bottom: 0.5em;
+    left: 10%;
+    right: 10%;
+    position: fixed;
+    z-index: 2;
+    background-color: #ffffff;
+  }
+  .sortingproduk{
+    display: none !important;
+  }
+  .modal-dialog{
+    overflow-y: initial !important
+  }
+  .modal-dialog .modal-body{
+      height: 85vh;
+      overflow-y: auto;
+  }
+  .areaproduk{
+    margin-bottom: 5em;
+  }
+  .lowerfooter{
+    margin-bottom: 4em;
   }
 }
