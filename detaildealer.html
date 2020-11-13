@@ -64,348 +64,592 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <div class="detaildealer">
-        <div class="row">
-          <div class="col-sm-2 mx-auto my-auto">
-            <img src="./img/dealer.png" class="fotodealer">
-          </div>
-          <div class="col-sm-10">
-            <p  style="color:dark-grey;font-size:15pt;font-weight:600"><span class="ml-2">  Maju Jaya Motor Blimbing</span></p>
-            <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-map-marked-alt" ></i><span class="ml-2">  Jalan Jaksa Agung Suprapto, Malang, Jawa Timur, Indonesia</span></p>
-            <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-phone-alt"></i></i><span class="ml-2">  081222222222</span></p>
-          </div>
+    <div class="nav-mobile fixed-top">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn text-dark" onclick="closeNav()">&times;</a>
+        <div class="logindiv mx-auto">
+          <a href="" class="btn btn-outline-red text-danger ">Masuk/Daftar</a>
         </div>
+        <hr>
+        <div class="menusidebar">
+          <a href="produk.html">Motor</a>
+          <a href="sparepart.html">Sparepart</a>
+          <a href="dealer.html">Dealer</a>
+        </div>
+        <hr>
+        <ul class="navbar-nav w-100">
+          <li class="nav-item pl-4 pr-4">
+             <a href="formmotor.html" class="btn btn-red text-white">Jual</a>
+          </li>
+        </ul>
       </div>
-      <div class="areaproduk mt-5">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="filtersidebar">
-              <div class="filtersidebarheader ">
-                <div class="row h-100">
-                    <div class="col-sm-12 mx-auto my-auto">
-                        Filter Motor
-                    </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <span style="font-size:18px;font-color:#303030;cursor:pointer" onclick="openNav()" class="navbar-toggler"><i class="fas fa-bars"></i></span> 
+        <a class="navbar-brand logonav ml-2" href="index.html">
+          <img src="./img/logosamping.png" class="logonav">
+        </a>
+        <span>
+        <ul class="navbar-nav mr-auto d-lg-none ml-auto navbar-icons d-flex flex-row navbar-right">
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">
+              <i class="fas fa-comment-dots"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">
+              <i class="fas fa-bell"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+          <input class="form-control searchform3" type="search" placeholder="Cari Produk" aria-label="Search">          
+        </form>
+      </nav>
+    </div>
+    <div class="bgdealermobile" >
+      <img src="./img/dealer.png" class="bgdealer mt-2">
+    </div>
+    <div class="containermobile">
+      <div class="container">
+        <div class="detaildealer">
+          <div class="row">
+            <div class="col-md-2 mx-auto my-auto">
+              <img src="./img/dealer.png" class="fotodealer">
+            </div>
+            <div class="col-md-10">
+              <p  style="color:dark-grey;font-size:15pt;font-weight:600">Maju Jaya Motor Blimbing</p>
+              <div class="row">
+                <div class="col-2 col-md-1">
+                  <i class="fas fa-map-marked-alt" ></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p  style="color:dark-grey;font-size:11pt" class="descdealer"> Jalan Jaksa Agung Suprapto, Malang, Jawa Timur, Indonesia</p>
                 </div>
               </div>
-              <form>
-                <div class="accordion" id="accordionFilter">
-                  <div class="card bg-white">
-                    <div class="card-header bg-white" id="headingOne">
-                      <h2 class="mb-0">
-                        <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                          Vendor <span><i class="fas fa-chevron-down float-right"></i></span>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                      <div class="card-body">
-                        <select class="selectpicker " multiple data-live-search="true">
-                          <div class="scrollable-menu">
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
-                          </div>
-                        </select> 
+              <div class="row">
+                <div class="col-2 col-md-1">
+                  <i class="fas fa-phone-alt" ></i>
+                </div>
+                <div class="col-10 col-md-11">
+                  <p  style="color:dark-grey;font-size:11pt" class="descdealer"> 081222222222</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="areaproduk areaprodukdealer">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="filtersidebar">
+                <div class="filtersidebarheader ">
+                  <div class="row h-100">
+                      <div class="col-sm-12 mx-auto my-auto">
+                          Filter Motor
+                      </div>
+                  </div>
+                </div>
+                <form>
+                  <div class="accordion" id="accordionFilter">
+                    <div class="card bg-white">
+                      <div class="card-header bg-white" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Vendor <span><i class="fas fa-chevron-down float-right"></i></span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                        <div class="card-body">
+                          <select class="selectpicker " multiple data-live-search="true">
+                            <div class="scrollable-menu">
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                              <option>Mustard</option>
+                              <option>Ketchup</option>
+                              <option>Relish</option>
+                            </div>
+                          </select> 
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="card bg-white">
-                    <div class="card-header bg-white" id="headingOne">
-                      <h2 class="mb-0">
-                        <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                          Harga <span><i class="fas fa-chevron-down float-right"></i></span>
-                        </button>
-                      </h2>
+                    <div class="card bg-white">
+                      <div class="card-header bg-white" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Harga <span><i class="fas fa-chevron-down float-right"></i></span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                        <div class="card-body">
+                            <div class="form-group">
+                              <label for="min">Min</label>
+                              <input type="number" class="form-control" id="min" placeholder="Harga Minimal">
+                            </div>
+                            <div class="form-group">
+                              <label for="max">Max</label>
+                              <input type="number" class="form-control" id="max" placeholder="Harga Maksimal">
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                      <div class="card-body">
+                    <div class="card bg-white">
+                      <div class="card-header bg-white" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Jarak Tempuh <span><i class="fas fa-chevron-down float-right"></i></span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseFour" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                        <div class="card-body">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="dibawah1000km" value="1000">
+                            <label class="custom-control-label" for="dibawah1000km">0 - 1000Km</label>
+                          </div>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="dibawah2000km" value="2000">
+                            <label class="custom-control-label" for="dibawah2000km">1001 - 2000Km</label>
+                          </div>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="dibawah3000km" value="3000">
+                            <label class="custom-control-label" for="dibawah3000km">2001 - 3000Km</label>
+                          </div>
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="dibawah4000km" value="4000">
+                            <label class="custom-control-label" for="dibawah4000km">3001 - 4000Km</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-white">
+                      <div class="card-header bg-white" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            Tahun <span><i class="fas fa-chevron-down float-right"></i></span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                        <div class="card-body">
                           <div class="form-group">
                             <label for="min">Min</label>
-                            <input type="number" class="form-control" id="min" placeholder="Harga Minimal">
+                            <input type="number" class="form-control" id="min" placeholder="Tahun Minimal">
                           </div>
                           <div class="form-group">
                             <label for="max">Max</label>
-                            <input type="number" class="form-control" id="max" placeholder="Harga Maksimal">
+                            <input type="number" class="form-control" id="max" placeholder="Tahun Maksimal">
                           </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-white">
-                    <div class="card-header bg-white" id="headingOne">
-                      <h2 class="mb-0">
-                        <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                          Jarak Tempuh <span><i class="fas fa-chevron-down float-right"></i></span>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseFour" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                      <div class="card-body">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="dibawah1000km" value="1000">
-                          <label class="custom-control-label" for="dibawah1000km">0 - 1000Km</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="dibawah2000km" value="2000">
-                          <label class="custom-control-label" for="dibawah2000km">1001 - 2000Km</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="dibawah3000km" value="3000">
-                          <label class="custom-control-label" for="dibawah3000km">2001 - 3000Km</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="dibawah4000km" value="4000">
-                          <label class="custom-control-label" for="dibawah4000km">3001 - 4000Km</label>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="card bg-white">
-                    <div class="card-header bg-white" id="headingOne">
-                      <h2 class="mb-0">
-                        <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                          Tahun <span><i class="fas fa-chevron-down float-right"></i></span>
-                        </button>
-                      </h2>
-                    </div>
-                    <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
-                      <div class="card-body">
-                        <div class="form-group">
-                          <label for="min">Min</label>
-                          <input type="number" class="form-control" id="min" placeholder="Tahun Minimal">
-                        </div>
-                        <div class="form-group">
-                          <label for="max">Max</label>
-                          <input type="number" class="form-control" id="max" placeholder="Tahun Maksimal">
-                        </div>
-                      </div>
+                    <div style="padding:1em">
+                      <button class="btn-filter btn btn-red mx-auto my-auto text-white" type="submit">Set Filter</button>
                     </div>
                   </div>
-                  <div style="padding:1em">
-                    <button class="btn-filter btn btn-red mx-auto my-auto text-white" type="submit">Set Filter</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="row">
-              <div class="col-md-6">
-                <form class="form-inline my-2 my-lg-0 mx-auto">
-                  <input class="form-control searchform2 w-100" type="search" placeholder="Cari Motor di Dealer Ini" aria-label="Search">
-                  <button class="btn my-2 my-sm-0 btnsearch text-white" type="submit">Cari</button>
                 </form>
               </div>
-              <div class="col-md-6">
-                <div class="dropdown float-right mb-4">
-                  <button class="btn bg-white btn-outline-dark dropdown-toggle" type="button" id="dropdownsort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Urutkan
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownsort">
-                    <button class="dropdown-item" type="button">Action</button>
-                    <button class="dropdown-item" type="button">Another action</button>
-                    <button class="dropdown-item" type="button">Something else here</button>                  
+            </div>
+            <div class="col-lg-9">
+              <div class="row sortingproduk">
+                <div class="col-sm-12">
+                  <div class="dropdown float-right mb-4">
+                    <button class="btn bg-white btn-outline-dark dropdown-toggle" type="button" id="dropdownsort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Urutkan
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownsort">
+                      <button class="dropdown-item" type="button">Action</button>
+                      <button class="dropdown-item" type="button">Another action</button>
+                      <button class="dropdown-item" type="button">Something else here</button>                  
+                    </div>
+                  </div>
+                </div>   
+              </div>
+              <div class="row mb-4">
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
+              <div class="row mb-4">
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card-product">
+                    <a class="btn nopaddingPanel" href="detailproduk.html">
+                    <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
+                      <div class="container">
+                        <p class="namaproduk">Yamaha R15 2016</p>
+                        <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
+                        <p class="hargaproduk">Rp.20.000.000</p> 
+                        <hr>
+                        <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <hr class="hrproduk"> 
+              <div class="pagination justify-content-center mb-5">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+              </div>
+              <center>
+                <div class="filterandsort">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col">
+                      <button class="btn bg-transparent" data-toggle="modal" data-target="#filterModalDealer"><i class="fas fa-filter"></i> Filter</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn bg-transparent" data-toggle="modal" data-target="#sortModalDealer"><i class="fas fa-sort-amount-down"></i> Urutkan</button>
+                    </div>
+                  </div>
+                </div>
+              </center>
             </div>
-            <div class="row mb-4">
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="filterModalDealer" class="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+      <div class="modal-dialog " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Filter Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="accordion" id="accordionFilter">
+                <div class="card bg-white">
+                  <div class="card-header bg-white" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                        Lokasi <span><i class="fas fa-chevron-down float-right"></i></span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                    <div class="card-body">
+                      <select class="selectpicker " multiple data-live-search="true">
+                        <div class="scrollable-menu">
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                        </div>
+                      </select>           
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <div class="card bg-white">
+                  <div class="card-header bg-white" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo">
+                        Vendor <span><i class="fas fa-chevron-down float-right"></i></span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                    <div class="card-body">
+                      <select class="selectpicker " multiple data-live-search="true">
+                        <div class="scrollable-menu">
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                        </div>
+                      </select> 
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-white">
+                  <div class="card-header bg-white" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="true" aria-controls="collapseThree">
+                        Harga <span><i class="fas fa-chevron-down float-right"></i></span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="min">Min</label>
+                        <input type="number" class="form-control" id="min" placeholder="Harga Minimal">
+                      </div>
+                      <div class="form-group">
+                        <label for="max">Max</label>
+                        <input type="number" class="form-control" id="max" placeholder="Harga Maksimal">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-white">
+                  <div class="card-header bg-white" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseFour4" aria-expanded="true" aria-controls="collapseFour">
+                          Jarak Tempuh <span><i class="fas fa-chevron-down float-right"></i></span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                    <div class="card-body">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="dibawah1000km" value="1000">
+                        <label class="custom-control-label" for="dibawah1000km">0 - 1000Km</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="dibawah2000km" value="2000">
+                        <label class="custom-control-label" for="dibawah2000km">1001 - 2000Km</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="dibawah3000km" value="3000">
+                        <label class="custom-control-label" for="dibawah3000km">2001 - 3000Km</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="dibawah4000km" value="4000">
+                        <label class="custom-control-label" for="dibawah4000km">3001 - 4000Km</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-white">
+                  <div class="card-header bg-white" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn bg-white btn-block text-left filtertitle" type="button" data-toggle="collapse" data-target="#collapseFive5" aria-expanded="true" aria-controls="collapseFive">
+                          Tahun <span><i class="fas fa-chevron-down float-right"></i></span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive5" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilter">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="min">Min</label>
+                        <input type="number" class="form-control" id="min" placeholder="Tahun Minimal">
+                      </div>
+                      <div class="form-group">
+                        <label for="max">Max</label>
+                        <input type="number" class="form-control" id="max" placeholder="Tahun Maksimal">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding:1em">
+                  <button class="btn-filter btn btn-red mx-auto my-auto text-white" type="submit">Set Filter</button>
                 </div>
               </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card-product">
-                  <a class="btn nopaddingPanel" href="detailproduk.html">
-                  <img src="./img/motordummy2.png" class="img-product" alt="produk" style="width:100%">
-                    <div class="container">
-                      <p class="namaproduk">Yamaha R15 2016</p>
-                      <p class="tahunkeluar">Tahun Produksi:<b>2016</b></p> 
-                      <p class="hargaproduk">Rp.20.000.000</p> 
-                      <hr>
-                      <p class="dealer"><span><i class="fas fa-store"> </i></span> Maju Jaya Motor</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <hr class="hrproduk"> 
-            <div class="pagination justify-content-center mb-5">
-              <a href="#">&laquo;</a>
-              <a href="#">1</a>
-              <a href="#" class="active">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-              <a href="#">6</a>
-              <a href="#">&raquo;</a>
-            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="sortModalDealer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Urutkan Produk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <button class="btn bg-transparent">Urut berdasar huruf</button>
+            <hr>
+            <button class="btn bg-transparent">Dari harga termurah</button>
+            <hr>
+            <button class="btn bg-transparent">Dari Harga Termahal</button>
+            <hr>
+            <button class="btn bg-transparent">Produk Terbaru</button> 
           </div>
         </div>
       </div>
@@ -414,18 +658,18 @@
       <div class="upperfooter">
         <div class="container">
           <div class="row">
-            <div class="col-sm">
+            <div class="col-sm leftfooter">
               <img src="./img/logobawah.png" class="logobawah mb-3">
               <h4 class="mb-2"><b>About Us</b></h4>
               <p class="about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <img src="./img/gplay.png"><span>  <img class="ml-2" src="./img/appstore.png"></span>
             </div>
-            <div class="col-sm">
+            <div class="col-sm rightfooter">
               <p class="about-us d-flex justify-content-right"><span><i class="fas fa-map-marked-alt fa-2x mr-4"></i></span> Jl. Candi Sawentar<br> No. E 714 Mojolangu, Kec. Lowokwaru<br>Kota Malang, Jawa Timur 65141</p>
               <p class="about-us d-flex justify-content-right"><span><i class="fas fa-phone fa-2x mr-4"></i></span>+62 341 4377066</p>
               <p class="about-us d-flex justify-content-right"><span><i class="fas fa-envelope fa-2x mr-4"></i></span>+62 341 4377066</p>
               <h4 class="mb-2 mt-4"><b>Follow Us</b></h4>
-              <div class="row mt-2">
+              <div class="row mt-2 ml-1">
                 <img src="./img/ig.svg" class="mr-2">
                 <img src="./img/fb.svg" class="mr-2">
                 <img src="./img/twitter.svg" class="mr-2">
@@ -434,7 +678,7 @@
           </div>
         </div>
       </div>
-      <div class="lowerfooter float-bottom">
+      <div class="lowerfooter">
         <p>© 2020 Motormu.com. All Rights Reserved.</p>
       </div>
     </footer>

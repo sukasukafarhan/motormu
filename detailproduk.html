@@ -64,9 +64,51 @@
         </ul>
       </div>
     </nav>
+    <div class="nav-mobile fixed-top">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn text-dark" onclick="closeNav()">&times;</a>
+        <div class="logindiv mx-auto">
+          <a href="" class="btn btn-outline-red text-danger ">Masuk/Daftar</a>
+        </div>
+        <hr>
+        <div class="menusidebar">
+          <a href="produk.html">Motor</a>
+          <a href="sparepart.html">Sparepart</a>
+          <a href="dealer.html">Dealer</a>
+        </div>
+        <hr>
+        <ul class="navbar-nav w-100">
+          <li class="nav-item pl-4 pr-4">
+             <a href="formmotor.html" class="btn btn-red text-white">Jual</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <span style="font-size:18px;font-color:#303030;cursor:pointer" onclick="openNav()" class="navbar-toggler"><i class="fas fa-bars"></i></span> 
+        <a class="navbar-brand logonav ml-2" href="index.html">
+          <img src="./img/logosamping.png" class="logonav">
+        </a>
+        <span>
+        <ul class="navbar-nav mr-auto d-lg-none ml-auto navbar-icons d-flex flex-row navbar-right">
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">
+              <i class="fas fa-comment-dots"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">
+              <i class="fas fa-bell"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+          <input class="form-control searchform3" type="search" placeholder="Cari Produk" aria-label="Search">          
+        </form>
+      </nav>
+    </div>
     <div class="container content-wrapper">
       <div class="row detailmotor">
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-12 col-md-6">
           <img id="featured" src="./img/motordummy2.png">
           <div id="slide-wrapper" >
             <img id="slideLeft" class="arrow" src="./img/arrow-left.png">
@@ -82,7 +124,7 @@
             <img id="slideRight" class="arrow" src="./img/arrow-right.png">
           </div>
         </div>
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-12 col-md-6">
           <div class="card-detail">
             <h2 class="detail-title">
             Yamaha R15 2016
@@ -99,10 +141,26 @@
               </div>
             </div>
             <hr>
-            <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-store"></i><span class="ml-2">  Maju Jaya Motor Blimbing</span></p>
+            <!-- <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-store"></i><span class="ml-2">  Maju Jaya Motor Blimbing</span></p>
             <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-map-marked-alt"></i><span class="ml-2">  Jalan Jaksa Agung Suprapto, Malang, Jawa Timur, Indonesia</span></p>
-            <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-phone-alt"></i></i><span class="ml-2">  081222222222</span></p>
+            <p  style="color:dark-grey;font-size:11pt"><i class="fas fa-phone-alt"></i></i><span class="ml-2">  081222222222</span></p> -->
             <div class="row">
+              <div class="col-2 col-md-1">
+                <i class="fas fa-map-marked-alt" ></i>
+              </div>
+              <div class="col-10 col-md-11">
+                <p  style="color:dark-grey;font-size:11pt;line-height:18pt" class="descproduk"> Jalan Jaksa Agung Suprapto, Malang, Jawa Timur, Indonesia</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 col-md-1">
+                <i class="fas fa-phone-alt" ></i>
+              </div>
+              <div class="col-10 col-md-11">
+                <p  style="color:dark-grey;font-size:11pt" class="descproduk"> 081222222222</p>
+              </div>
+            </div>
+            <div class="row buttongroupbeli">
               <div class="col-lg-3">
                 <a class="btn btn-outline-danger w-100"href=""><i class="fas fa-share-alt"></i></a>
               </div>
@@ -187,58 +245,50 @@
           </div>
         </div>
       </div>
-      <div class="row desc w-100">
-        <div class="col-lg-6 col-sm-12">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="desc-title">Spesifikasi</h2>
-              <div class="card-detail">
-                <table class="table nopaddingPanel borderless">
-                  <tbody>
-                    <tr>
-                      <td>Merk</td>
-                      <td class="text-left">: <span><b>Yamaha</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>Seri</td>
-                      <td style="text-align: left">: <span><b>All new R15</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>Tahun</td>
-                      <td style="text-align: left">: <span><b>2016</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>Kategori</td>
-                      <td style="text-align: left">: <span><b>-</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>KM</td>
-                      <td style="text-align: left">: <span><b>5000 Km</b></span></td>
-                    </tr>
-                    <tr>
-                      <td>Surat Keterangan</td>
-                      <td style="text-align: left">: <span><b>Tersedia</b></span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+      <div class="row desc">
+        <div class="col-12 col-md-6">
+          <h2 class="desc-title">Detail</h2>
+          <div class="card-detail">
+            <p> For sale Yamaha R15 2016.
+              Full original, bukan restorasi.
+              Low odo 5.000 km.
+              Kondisi istimewa, no crash, no rebah.
+              Collector item. Warna corak hitam
+            </p>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <h2 class="desc-title">Detail</h2>
-              <div class="card-detail">
-                <p> For sale Yamaha R15 2016.
-                    Full original, bukan restorasi.
-                    Low odo 5.000 km.
-                    Kondisi istimewa, no crash, no rebah.
-                    Collector item. Warna corak hitam
-                </p>
-              </div>
-            </div>
+          <h2 class="desc-title">Spesifikasi</h2>
+          <div class="card-detail">
+            <table class="table nopaddingPanel borderless">
+              <tbody>
+                <tr>
+                  <td>Merk</td>
+                  <td class="text-left">: <span><b>Yamaha</b></span></td>
+                </tr>
+                <tr>
+                  <td>Seri</td>
+                  <td style="text-align: left">: <span><b>All new R15</b></span></td>
+                </tr>
+                <tr>
+                  <td>Tahun</td>
+                  <td style="text-align: left">: <span><b>2016</b></span></td>
+                </tr>
+                <tr>
+                  <td>Kategori</td>
+                  <td style="text-align: left">: <span><b>-</b></span></td>
+                </tr>
+                <tr>
+                  <td>KM</td>
+                  <td style="text-align: left">: <span><b>5000 Km</b></span></td>
+                </tr>
+                <tr>
+                  <td>Surat Keterangan</td>
+                  <td style="text-align: left">: <span><b>Tersedia</b></span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-12 col-md-6">
           <h2 class="desc-title">Lokasi Dealer</h2>
           <div class="card-detail">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.889779524141!2d112.62466132917763!3d-7.941027171397667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629d2bb119985%3A0xd42db5022c24b9ab!2sDatamax%20Teknologi%20Internasional!5e0!3m2!1sid!2sid!4v1603797610588!5m2!1sid!2sid"  height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -246,22 +296,40 @@
         </div>
       </div>
     </div>
+    <center>
+      <div class="buttongroupbelimobile">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-3" style="padding-left:0.2em!important;padding-right:0.2em!important;">
+              <a class="btn btn-outline-danger w-100"href=""><i class="fas fa-share-alt"></i></a>
+            </div>
+            <div class="col-3" style="padding-left:0.2em!important;padding-right:0.2em!important;">
+              <a class="btn btn-dark w-100"href=""><i class="fas fa-comment-dots"></i></a>
+            </div>
+            <div class="col-6" style="padding-left:0.2em!important;padding-right:0em!important;">
+              <button data-toggle="modal" data-target="#simulasi" class="btn btn-red text-white">Simulasi Pembayaran</button>
+                  <!-- <a class="btn btn-red text-white w-100"href="">Simulasi Pembayaran</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
     <footer id="sticky-footer">
       <div class="upperfooter">
         <div class="container">
           <div class="row">
-            <div class="col-sm">
+            <div class="col-sm leftfooter">
               <img src="./img/logobawah.png" class="logobawah mb-3">
               <h4 class="mb-2"><b>About Us</b></h4>
               <p class="about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <img src="./img/gplay.png"><span>  <img class="ml-2" src="./img/appstore.png"></span>
             </div>
-            <div class="col-sm">
+            <div class="col-sm rightfooter">
               <p class="about-us d-flex justify-content-right"><span><i class="fas fa-map-marked-alt fa-2x mr-4"></i></span> Jl. Candi Sawentar<br> No. E 714 Mojolangu, Kec. Lowokwaru<br>Kota Malang, Jawa Timur 65141</p>
               <p class="about-us d-flex justify-content-right"><span><i class="fas fa-phone fa-2x mr-4"></i></span>+62 341 4377066</p>
               <p class="about-us d-flex justify-content-right"><span><i class="fas fa-envelope fa-2x mr-4"></i></span>+62 341 4377066</p>
               <h4 class="mb-2 mt-4"><b>Follow Us</b></h4>
-              <div class="row mt-2">
+              <div class="row mt-2 ml-1">
                 <img src="./img/ig.svg" class="mr-2">
                 <img src="./img/fb.svg" class="mr-2">
                 <img src="./img/twitter.svg" class="mr-2">
